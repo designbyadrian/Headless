@@ -1,0 +1,59 @@
+@import "bourbon","neat"
+
+@font-face
+	font-family: 'GillSans'
+	src: url('fonts/GillSans.eot?#iefix') format('embedded-opentype'),url('fonts/GillSans.woff') format('woff'),url('fonts/GillSans.ttf') format('truetype'),url('fonts/GillSans.svg#Brand') format('svg')
+	font-weight: normal
+	font-style: normal
+
+*
+	box-sizing: border-box
+
+body
+	font-family: "GillSans", "Helvetica", sans-serif
+	font-size: 18px
+	color: #999
+	background-color: #eee
+
+h1
+	font-size: 1.75em
+
+section
+	+outer-container
+
+.address-input
+	+span-columns(8)
+	+shift(2)
+
+	form
+		+span-columns(12)
+
+		fieldset
+			border: 0
+			padding: 0
+
+			input
+				font-size: inherit
+				width: 100%
+				padding: 1em
+				border: 1px solid #ccc
+				border-radius: 4px
+
+			&:first-child
+				+span-columns(9 of 12)
+			&:last-child
+				+span-columns(2 of 12)
+
+	button
+		background-color: cornflowerblue
+		color: white
+		width: 60px
+		height: 60px
+		border-radius: 32px
+		text-align: center
+		line-height: 60px
+		text-transform: uppercase
+		border: none
+		font-size: 1em
+		font-weight: bold
+		cursor: pointer

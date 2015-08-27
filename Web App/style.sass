@@ -1,10 +1,6 @@
 @import "bourbon","neat"
 
-@font-face
-	font-family: 'GillSans'
-	src: url('fonts/GillSans.eot?#iefix') format('embedded-opentype'),url('fonts/GillSans.woff') format('woff'),url('fonts/GillSans.ttf') format('truetype'),url('fonts/GillSans.svg#Brand') format('svg')
-	font-weight: normal
-	font-style: normal
+$color-primary: cornflowerblue
 
 *
 	box-sizing: border-box
@@ -22,8 +18,7 @@ section
 	+outer-container
 
 .address-input
-	+span-columns(8)
-	+shift(2)
+	+span-columns(12)
 
 	form
 		+span-columns(12)
@@ -38,22 +33,50 @@ section
 				padding: 1em
 				border: 1px solid #ccc
 				border-radius: 4px
+				box-shadow: none
+				-moz-appearance: none
+				-webkit-appearance: none
 
 			&:first-child
-				+span-columns(9 of 12)
+				+span-columns(12)
 			&:last-child
-				+span-columns(2 of 12)
+				+span-columns(12)
+				text-align: center
 
 	button
-		background-color: cornflowerblue
+		display: inline-block
+		background-color: $color-primary
 		color: white
-		width: 60px
-		height: 60px
-		border-radius: 32px
+		width: 100%
+		padding: 1em
 		text-align: center
-		line-height: 60px
+
 		text-transform: uppercase
 		border: none
+		border-radius: 4px
 		font-size: 1em
 		font-weight: bold
 		cursor: pointer
+		border-bottom: 2px solid adjust-color($color-primary,$lightness:-10%,$saturation:-15%)
+
+@media all and (min-width: 768px)
+	.address-input
+		+span-columns(8)
+		+shift(2)
+
+		form
+			fieldset
+				&:first-child
+					+span-columns(9 of 12)
+				&:last-child
+					+span-columns(2 of 12)
+
+		button
+			display: inline-block
+			width: 60px
+			height: 60px
+			padding: 0
+			border: none
+			border-radius: 32px
+			line-height: 60px
+			

@@ -6,5 +6,22 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "de.appplant.cordova.plugin.printer": {
+        "source": {
+            "type": "registry",
+            "id": "de.appplant.cordova.plugin.printer"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.bez4pieci.cookies": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bez4pieci/Phonegap-Cookies-Plugin.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

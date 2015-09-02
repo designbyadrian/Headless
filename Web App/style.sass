@@ -5,43 +5,57 @@ $color-primary: cornflowerblue
 *
 	box-sizing: border-box
 
+html,body
+	width: 100%
+	height: 100%
+
 body
 	font-family: "GillSans", "Helvetica", sans-serif
 	font-size: 18px
 	color: #999
 	background-color: #eee
+	margin: 0
+	padding: 20px
+	display: flex
+	flex-direction: column
+	justify-content: center
 
 h1
 	font-size: 1.75em
 
+h5
+	margin-bottom: .5em
+
 section
 	+outer-container
+
+.page-title
+	+span-columns(12)
 
 .address-input
 	+span-columns(12)
 
-	form
-		+span-columns(12)
+	fieldset
+		border: 0
+		padding: 0
+		margin: 0
 
-		fieldset
-			border: 0
-			padding: 0
+		input
+			font-size: inherit
+			width: 100%
+			padding: 1em
+			border: 1px solid #ccc
+			border-radius: 4px
+			box-shadow: none
+			-moz-appearance: none
+			-webkit-appearance: none
 
-			input
-				font-size: inherit
-				width: 100%
-				padding: 1em
-				border: 1px solid #ccc
-				border-radius: 4px
-				box-shadow: none
-				-moz-appearance: none
-				-webkit-appearance: none
-
-			&:first-child
-				+span-columns(12)
-			&:last-child
-				+span-columns(12)
-				text-align: center
+		&:first-child
+			+span-columns(12 of 12)
+		&:last-child
+			+span-columns(12 of 12)
+			+omega()
+			text-align: right
 
 	button
 		display: inline-block
@@ -59,24 +73,27 @@ section
 		cursor: pointer
 		border-bottom: 2px solid adjust-color($color-primary,$lightness:-10%,$saturation:-15%)
 
+		&:active
+			background-color: darken($color-primary,2%)
+			border-bottom-color: adjust-color($color-primary,$lightness:-12%,$saturation:-15%)
+			border-bottom-size: 1px
+			padding-top: 19px
+			padding-bottom: 17px
+
 @media all and (min-width: 768px)
+	
+	.page-title
+		+span-columns(8)
+		+shift(2)
+
 	.address-input
 		+span-columns(8)
 		+shift(2)
 
-		form
-			fieldset
-				&:first-child
-					+span-columns(9 of 12)
-				&:last-child
-					+span-columns(2 of 12)
+		fieldset
+			&:first-child
+				+span-columns(10 of 12)
+			&:last-child
+				+span-columns(2 of 12)
 
-		button
-			display: inline-block
-			width: 60px
-			height: 60px
-			padding: 0
-			border: none
-			border-radius: 32px
-			line-height: 60px
-			
+

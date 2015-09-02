@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -40,9 +39,16 @@
 		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
+		9A82BE7B1B8F9DC9007A5467 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A82BE751B8F9DC9007A5467 /* Security.framework */; };
+		9A82BE7C1B8F9DC9007A5467 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A82BE761B8F9DC9007A5467 /* SystemConfiguration.framework */; };
+		9A82BE7D1B8F9DC9007A5467 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A82BE771B8F9DC9007A5467 /* libz.dylib */; };
+		9A82BE7E1B8F9DC9007A5467 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A82BE781B8F9DC9007A5467 /* libc++.dylib */; };
+		9A82BE7F1B8F9DC9007A5467 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A82BE791B8F9DC9007A5467 /* Fabric.framework */; };
+		9A82BE801B8F9DC9007A5467 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A82BE7A1B8F9DC9007A5467 /* Crashlytics.framework */; };
 		9AD043E21B8F4EB5003FB76F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD043E11B8F4EB5003FB76F /* Images.xcassets */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		D779A90D93FE49389BDACC37 /* CDVCookies.m in Sources */ = {isa = PBXBuildFile; fileRef = E96943084A84452F93925B5E /* CDVCookies.m */; };
+		04B26EB7A92446789BDDBDC9 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CACFE308A66F4BD28E5BD467 /* CDVStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +107,12 @@
 		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Headless-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Headless-Info.plist"; path = "../Headless-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9A82BE751B8F9DC9007A5467 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9A82BE761B8F9DC9007A5467 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9A82BE771B8F9DC9007A5467 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9A82BE781B8F9DC9007A5467 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		9A82BE791B8F9DC9007A5467 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		9A82BE7A1B8F9DC9007A5467 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		9AD043E11B8F4EB5003FB76F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Headless/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		B8D723B19A084CE7B1C08040 /* CDVCookies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVCookies.h; path = com.bez4pieci.cookies/CDVCookies.h; sourceTree = "<group>"; };
 		C5BDC385C8A04C28AD0CDD50 /* APPPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APPPrinter.h; path = de.appplant.cordova.plugin.printer/APPPrinter.h; sourceTree = "<group>"; };
@@ -111,6 +123,8 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Headless/config.xml; sourceTree = "<group>"; };
+		CACFE308A66F4BD28E5BD467 /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		79C871971C5348FEB2CC95E1 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +133,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
+				9A82BE7B1B8F9DC9007A5467 /* Security.framework in Frameworks */,
+				9A82BE7D1B8F9DC9007A5467 /* libz.dylib in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				9A82BE7F1B8F9DC9007A5467 /* Fabric.framework in Frameworks */,
+				9A82BE801B8F9DC9007A5467 /* Crashlytics.framework in Frameworks */,
+				9A82BE7C1B8F9DC9007A5467 /* SystemConfiguration.framework in Frameworks */,
+				9A82BE7E1B8F9DC9007A5467 /* libc++.dylib in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +183,12 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				9A82BE751B8F9DC9007A5467 /* Security.framework */,
+				9A82BE761B8F9DC9007A5467 /* SystemConfiguration.framework */,
+				9A82BE771B8F9DC9007A5467 /* libz.dylib */,
+				9A82BE781B8F9DC9007A5467 /* libc++.dylib */,
+				9A82BE791B8F9DC9007A5467 /* Fabric.framework */,
+				9A82BE7A1B8F9DC9007A5467 /* Crashlytics.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -214,6 +240,8 @@
 				B8D723B19A084CE7B1C08040 /* CDVCookies.h */,
 				D5E300A3905A4F478D0D4B9C /* APPPrinter.m */,
 				C5BDC385C8A04C28AD0CDD50 /* APPPrinter.h */,
+				CACFE308A66F4BD28E5BD467 /* CDVStatusBar.m */,
+				79C871971C5348FEB2CC95E1 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = Headless/Plugins;
@@ -278,6 +306,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				9A82BE741B8F9D8E007A5467 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -389,6 +418,19 @@
 			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
 			showEnvVarsInLog = 0;
 		};
+		9A82BE741B8F9D8E007A5467 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 58c0ae45bcc1f9aa3e22453f2efcb00abb3bb580 9d640efdab08faaee95f45f88be5869ee7ac7041d9c6f0fcdb49dca13361aa20";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -401,6 +443,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				D779A90D93FE49389BDACC37 /* CDVCookies.m in Sources */,
 				792F02663DB84376BAC00B9E /* APPPrinter.m in Sources */,
+				04B26EB7A92446789BDDBDC9 /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +466,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -456,6 +503,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Headless/Headless-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;

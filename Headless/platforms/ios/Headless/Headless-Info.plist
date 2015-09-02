@@ -28,6 +28,20 @@
     <string>????</string>
     <key>CFBundleVersion</key>
     <string>0.0.1</string>
+    <key>Fabric</key>
+    <dict>
+      <key>APIKey</key>
+      <string>58c0ae45bcc1f9aa3e22453f2efcb00abb3bb580</string>
+      <key>Kits</key>
+      <array>
+        <dict>
+          <key>KitInfo</key>
+          <dict/>
+          <key>KitName</key>
+          <string>Crashlytics</string>
+        </dict>
+      </array>
+    </dict>
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSMainNibFile</key>

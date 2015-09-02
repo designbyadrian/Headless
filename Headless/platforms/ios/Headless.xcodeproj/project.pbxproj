@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		04B26EB7A92446789BDDBDC9 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CACFE308A66F4BD28E5BD467 /* CDVStatusBar.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -50,6 +49,7 @@
 		9AD043E21B8F4EB5003FB76F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD043E11B8F4EB5003FB76F /* Images.xcassets */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		D779A90D93FE49389BDACC37 /* CDVCookies.m in Sources */ = {isa = PBXBuildFile; fileRef = E96943084A84452F93925B5E /* CDVCookies.m */; };
+		87B7EF0A0F48475691A26DBB /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC785D5F224E24898D2AC1 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +126,8 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Headless/config.xml; sourceTree = "<group>"; };
+		0FFC785D5F224E24898D2AC1 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A19FB1D931C64465A36446C3 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,8 @@
 				C5BDC385C8A04C28AD0CDD50 /* APPPrinter.h */,
 				CACFE308A66F4BD28E5BD467 /* CDVStatusBar.m */,
 				79C871971C5348FEB2CC95E1 /* CDVStatusBar.h */,
+				0FFC785D5F224E24898D2AC1 /* CDVInAppBrowser.m */,
+				A19FB1D931C64465A36446C3 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = Headless/Plugins;
@@ -445,6 +449,7 @@
 				D779A90D93FE49389BDACC37 /* CDVCookies.m in Sources */,
 				792F02663DB84376BAC00B9E /* APPPrinter.m in Sources */,
 				04B26EB7A92446789BDDBDC9 /* CDVStatusBar.m in Sources */,
+				87B7EF0A0F48475691A26DBB /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
